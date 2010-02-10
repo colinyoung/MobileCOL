@@ -1,0 +1,182 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (7.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (20100210082839)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "instructor_id" integer, "term" varchar(255), "name" varchar(255), "number" varchar(255), "time" varchar(255), "campus" varchar(255), "room" varchar(255), "homepage" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE TABLE "courses_students" ("course_id" integer, "student_id" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210082839')[0m
+Migrating to CreateInstructors (20100210083119)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "instructors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "office" varchar(255), "phone" varchar(255), "email" varchar(255), "office_hours" text, "advising_hours" text, "homepage" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210083119')[0m
+Migrating to CreateStudents (20100210083608)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210083608')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("courses")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("courses_students")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("instructors")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("students")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mInstructor Create (0.5ms)[0m   [0;1mINSERT INTO "instructors" ("name", "created_at", "office_hours", "updated_at", "phone", "homepage", "office", "email", "advising_hours") VALUES('Jimbo', '2010-02-10 08:42:03', NULL, '2010-02-10 08:42:03', NULL, NULL, NULL, NULL, NULL)[0m
+  [4;35;1mInstructor Load (0.4ms)[0m   [0mSELECT * FROM "instructors" LIMIT 1[0m
+  [4;36;1mInstructor Load (0.4ms)[0m   [0;1mSELECT * FROM "instructors" LIMIT 1[0m
+  [4;35;1mInstructor Load (0.4ms)[0m   [0mSELECT * FROM "instructors" LIMIT 1[0m
+  [4;36;1mInstructor Load (0.4ms)[0m   [0;1mSELECT * FROM "instructors" LIMIT 1[0m
+  [4;35;1mInstructor Load (0.4ms)[0m   [0mSELECT * FROM "instructors" LIMIT 1[0m
+  [4;36;1mInstructor Load (0.4ms)[0m   [0;1mSELECT * FROM "instructors" LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mInstructor Load (0.6ms)[0m   [0;1mSELECT * FROM "instructors" LIMIT 1[0m
+  [4;35;1mCourse Load (0.2ms)[0m   [0mSELECT * FROM "courses" WHERE ("courses".instructor_id = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM "students" LIMIT 1[0m
+  [4;35;1mStudent Load (0.6ms)[0m   [0mSELECT * FROM "students" LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (20100210082839)
+Migrating to CreateInstructors (20100210083119)
+Migrating to CreateStudents (20100210083608)
+Migrating to CreateCredentials (20100210084902)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "credentials" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "col_username" varchar(255), "col_password" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210084902')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("courses")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("courses_students")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("credentials")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("instructors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("students")[0m
+  [4;36;1mStudent Load (1.0ms)[0m   [0;1mSELECT * FROM "students" LIMIT 1[0m
+  [4;35;1mStudent Load (0.6ms)[0m   [0mSELECT * FROM "students" LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mStudent Create (0.5ms)[0m   [0mINSERT INTO "students" ("name", "created_at", "updated_at") VALUES('Colin', '2010-02-10 08:51:45', '2010-02-10 08:51:45')[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT * FROM "students" LIMIT 1[0m
+  [4;35;1mCredential Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: credentials.student_id: SELECT * FROM "credentials" WHERE ("credentials".student_id = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCredentials (20100210084902)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mDROP TABLE "credentials"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100210084902'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("courses")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("courses_students")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("instructors")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("students")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCourses (20100210082839)
+Migrating to CreateInstructors (20100210083119)
+Migrating to CreateStudents (20100210083608)
+Migrating to CreateCredentials (20100210084902)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "credentials" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "student_id" integer, "col_username" varchar(255), "col_password" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210084902')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("courses")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("courses_students")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("credentials")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("instructors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("students")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM "students" LIMIT 1[0m
+  [4;36;1mCredential Load (0.2ms)[0m   [0;1mSELECT * FROM "credentials" WHERE ("credentials".student_id = 1) LIMIT 1[0m
+  [4;35;1mStudent Load (0.4ms)[0m   [0mSELECT * FROM "students" LIMIT 1[0m
+  [4;36;1mCredential Load (0.2ms)[0m   [0;1mSELECT * FROM "credentials" WHERE ("credentials".student_id = 1) LIMIT 1[0m
