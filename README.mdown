@@ -1,0 +1,14 @@
+# MobileCOL
+### ...because COL needs a mobile interface yesterday.
+
+## Overview
+
+MobileCOL has two parts; a web API/scraper, and an iPhone app. the iPhone app relies on the scraping API (a rails app) that also handles user authentication, accounts, and caching of student data.
+
+## "Legality"
+
+No, I have no idea if this is hunky-dory with DePaul, but heck, it's a College of Computing so we'll see what happens.  Otherwise, this application comes with absolutely no guarantees, and since it's based on an HTML scraper of a custom ASP.NET application, breakages can and probably will occur.
+
+## Usage and Licensing
+
+If you want to make your own mobile (or desktop, or any other kind of app) that will utilize the scraper's API: please download it yourself and run it on your own server.  I won't have any API key authentication to my server (mobilecol.info), but of course you won't be able to manage your users -- they'd have to use your mobilecol.info account to log in.
