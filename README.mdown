@@ -11,9 +11,9 @@ No, I have no idea if this is hunky-dory with DePaul.  This application comes wi
 
 ### Your Secure Information
 
-__If you choose to share your Campus Connect password:__ In order to "remember you" so that you don't have to type in your Campus Connect details every time you use the MobileCOL app, MobileCOL has to store your Campus Connect password.  As an open source application, you are free to browse the code that stores your data (the open source (attr_encrypted gem)[http://github.com/shuber/attr_encrypted])).  The data is stored using a two-way AES 256-bit encryption algorithm.
+__If you choose to share your Campus Connect password:__ In order to "remember you" so that you don't have to type in your Campus Connect details every time you use the MobileCOL app, MobileCOL has to store your Campus Connect password.  As an open source application, you are free to browse the code that stores your data (the open source [attr_encrypted gem](http://github.com/shuber/attr_encrypted])).  The data is stored using a two-way AES 256-bit encryption algorithm.
 
-**Please Note:** The MobileCOL API is recommended for use _only_ on servers that have SSL Certificates installed.  _The version of the MobileCOL API that yours truly runs at (api.mobilecol.info)[http://api.mobilecol.info] is still waiting for SSL certification._
+**Please Note:** The MobileCOL API is recommended for use _only_ on servers that have SSL Certificates installed.  _The version of the MobileCOL API that yours truly runs at <http://api.mobilecol.info> is still waiting for SSL certification._
 
 ### Usage and Licensing
 
