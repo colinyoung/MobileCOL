@@ -7,14 +7,14 @@
 
 ### This is Unofficial
 
-No, I have no idea if this is hunky-dory with DePaul.  This application comes with absolutely no guarantees, and since it's based on an HTML scraper of a custom ASP.NET application, breakages can and probably will occur.  If,
+No, I have no idea if this is hunky-dory with DePaul.  This application comes with absolutely no guarantees, and since it's based on an HTML scraper of a custom ASP.NET application, breakages can and probably will occur.
 
 ### Your Secure Information
 
 __If you choose to share your Campus Connect password:__ In order to "remember you" so that you don't have to type in your Campus Connect details every time you use the MobileCOL app, MobileCOL has to store your Campus Connect password.  As an open source application, you are free to browse the code that stores your data (the open source (attr_encrypted gem)[http://github.com/shuber/attr_encrypted])).  The data is stored using a two-way AES 256-bit encryption algorithm.
 
-**Please Note:** The MobileCOL API is recommended for use _only_ on servers that have SSL Certificates installed.  _MobileCOL.info itself is currently under review for an open-source license and will hopefully be opened soon_.
+**Please Note:** The MobileCOL API is recommended for use _only_ on servers that have SSL Certificates installed.  _The version of the MobileCOL API that yours truly runs at (api.mobilecol.info)[http://api.mobilecol.info] is still waiting for SSL certification._
 
 ### Usage and Licensing
 
-If you want to make your own mobile (or desktop, or any other kind of app) that will utilize the scraper's API: please download it yourself and run it on your own server.  I won't have any API key authentication to my server (mobilecol.info), but of course you won't be able to manage your users -- they'd have to use your mobilecol.info account to log in.
+If you want to make your own mobile (or desktop, or any other kind of app) that will utilize the scraper's API: please download it yourself and run it on your own server.  I will have API key authentication to my server (api.mobilecol.info), but of course you won't be able to manage your users -- they'd have to use your mobilecol.info account to log in.
