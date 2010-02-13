@@ -3,11 +3,17 @@
 
 ### Overview
 
-MobileCOL has two parts; a web API/scraper, and an iPhone app. the iPhone app relies on the scraping API (a rails app) that also handles user authentication, accounts, and caching of student data.
+*Updated* MobileCOL has three parts; a web API/scraper, a mobile touch interface at mobilecol.info, and an iPhone app. the iPhone app relies on the scraping API (a rails app) that also handles user authentication, accounts, and caching of student data.
 
-### "Legality"
+### This is Unofficial
 
-No, I have no idea if this is hunky-dory with DePaul, but heck, it's a College of Computing so we'll see what happens.  Otherwise, this application comes with absolutely no guarantees, and since it's based on an HTML scraper of a custom ASP.NET application, breakages can and probably will occur.
+No, I have no idea if this is hunky-dory with DePaul.  This application comes with absolutely no guarantees, and since it's based on an HTML scraper of a custom ASP.NET application, breakages can and probably will occur.  If,
+
+### Your Secure Information
+
+__If you choose to share your Campus Connect password:__ In order to "remember you" so that you don't have to type in your Campus Connect details every time you use the MobileCOL app, MobileCOL has to store your Campus Connect password.  As an open source application, you are free to browse the code that stores your data (the open source (attr_encrypted gem)[http://github.com/shuber/attr_encrypted])).  The data is stored using a two-way AES 256-bit encryption algorithm.
+
+**Please Note:** The MobileCOL API is recommended for use _only_ on servers that have SSL Certificates installed.  _MobileCOL.info itself is currently under review for an open-source license and will hopefully be opened soon_.
 
 ### Usage and Licensing
 
