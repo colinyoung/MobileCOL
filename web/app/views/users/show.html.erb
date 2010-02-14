@@ -1,18 +1,20 @@
-<p>
-  <b>Username:</b>
-  <%=h @user.username %>
-</p>
+<% title "MobileCOL Control Panel"%>
 
-<p>
-  <b>Email:</b>
-  <%=h @user.email %>
-</p>
+<% nav [
+  list_link_to( "Current Courses", courses_path ),
+  list_link_to( "Assignment Calendar", assignments_path), 
+  list_link_to( "Recent Announcements", courses_path),
+  list_link_to( "Settings", edit_user_path)  
+  ] %>
 
-<p>
-  <b>Password:</b>
-  <%=h @user.password %>
-</p>
+<%- if current_user.first_name -%>
+<h3>Hi, <%= current_user.first_name %>!</h3>
+<%- end -%>
+<p>Thanks for logging in.</p>
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= render :partial => 'alerts' %>
+
+
+
+<%= render :partial => 'footer' %>

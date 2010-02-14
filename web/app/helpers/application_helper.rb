@@ -31,4 +31,8 @@ module ApplicationHelper
     end
     @content_for_back_nav = output
   end  
+  
+  def hasAlerts?
+    false
+  end  
 end

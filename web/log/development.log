@@ -5678,3 +5678,2212 @@ Rendering users/index
 Rendered users/_welcome_message (0.1ms)
 Rendered users/_footer (0.3ms)
 Completed in 29ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (183.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (75.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:37:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (224.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (163.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (10.8ms)
+Rendered users/_footer (80.0ms)
+Completed in 695ms (View: 202, DB: 647) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-12 21:37:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (14.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 131ms (View: 33, DB: 15) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-12 21:38:51) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 75ms (View: 12, DB: 47) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-02-12 21:38:53) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"colinyoung", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (249.3ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'colinyoung') LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed in 765ms (DB: 251) | 302 Found [http://localhost/user_sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:38:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (30.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (7.7ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.4ms)
+  [4;36;1mUser Load (101.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 271ms (View: 118, DB: 140) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-02-12 21:39:40) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (32.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed in 125ms (DB: 34) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:39:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.4ms)
+Completed in 24ms (View: 8, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-12 21:39:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 23ms (View: 6, DB: 2) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-02-12 21:39:45) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"colinyoung", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (5.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'colinyoung') LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed in 38ms (DB: 6) | 302 Found [http://localhost/user_sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:39:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.6ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 38ms (View: 17, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:41:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (31.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+ERROR: compiling _run_erb_app47views47users47index46html46erb RAISED compile error
+/Users/colin/Apps/mobilecol/web/app/views/users/index.html.erb:2: syntax error, unexpected ';'
+;  if !current_user - ; @output_buffer.concat "\n"
+                       ^
+Function body:           def _run_erb_app47views47users47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  title "Log In to " + PRODUCT_NAME ; @output_buffer.concat "\n"
+;  if !current_user - ; @output_buffer.concat "\n"
+; @output_buffer.concat(( render :partial => "welcome_message" ).to_s); @output_buffer.concat "\n"
+;  else 
+@output_buffer.concat(( render :action => "show" ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( render :partial => 'footer' ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/colin/Apps/mobilecol/web/app/views/users/index.html.erb:9:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/colin/Apps/mobilecol/web/app/controllers/users_controller.rb:7:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/colin/Apps/mobilecol/web/app/views/users/index.html.erb:2: syntax error, unexpected ';'
+;  if !current_user - ; @output_buffer.concat "\n"
+                       ^) on line #2 of app/views/users/index.html.erb:
+1: <% title "Log In to " + PRODUCT_NAME %>
+2: <%- if !current_user - %>
+3: <%= render :partial => "welcome_message" %>
+4: <%- else -%>
+5: <%= render :action => "show" %>
+
+    app/views/users/index.html.erb:9:in `compile!'
+    app/controllers/users_controller.rb:7:in `index'
+
+Rendered rescues/_trace (54.4ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:41:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (24.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.4ms)
+Completed in 77ms (View: 38, DB: 25) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:42:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (22.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.4ms)
+Completed in 47ms (View: 11, DB: 23) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:42:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (3.9ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.4ms)
+Completed in 121ms (View: 17, DB: 6) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:42:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (12.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `redirect_to' for #<ActionView::Base:0x10353d0a0>) on line #5 of app/views/users/index.html.erb:
+2: <%- if !current_user -%>
+3: <%= render :partial => "welcome_message" %>
+4: <%- else -%>
+5: <% redirect_to :action => "show" %>
+6: <%- end -%>
+7: <%= render :partial => 'footer' %>
+
+    app/views/users/index.html.erb:5
+    app/controllers/users_controller.rb:7:in `index'
+
+Rendered rescues/_trace (50.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:43:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (27.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `show_users_url' for #<ActionView::Base:0x103188ae0>) on line #5 of app/views/users/index.html.erb:
+2: <%- if !current_user -%>
+3: <%= render :partial => "welcome_message" %>
+4: <%- else -%>
+5: <% redirect_to show_users_url %>
+6: <%- end -%>
+7: <%= render :partial => 'footer' %>
+
+    app/views/users/index.html.erb:5
+    app/controllers/users_controller.rb:7:in `index'
+
+Rendered rescues/_trace (51.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:43:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (32.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `show_user_url' for #<ActionView::Base:0x103234818>) on line #5 of app/views/users/index.html.erb:
+2: <%- if !current_user -%>
+3: <%= render :partial => "welcome_message" %>
+4: <%- else -%>
+5: <% redirect_to show_user_url %>
+6: <%- end -%>
+7: <%= render :partial => 'footer' %>
+
+    app/views/users/index.html.erb:5
+    app/controllers/users_controller.rb:7:in `index'
+
+Rendered rescues/_trace (53.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:43:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (24.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `show_user_path' for #<ActionView::Base:0x1032e46a0>) on line #5 of app/views/users/index.html.erb:
+2: <%- if !current_user -%>
+3: <%= render :partial => "welcome_message" %>
+4: <%- else -%>
+5: <% redirect_to show_user_path %>
+6: <%- end -%>
+7: <%= render :partial => 'footer' %>
+
+    app/views/users/index.html.erb:5
+    app/controllers/users_controller.rb:7:in `index'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:43:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `show_users_path' for #<ActionView::Base:0x103481c10>) on line #5 of app/views/users/index.html.erb:
+2: <%- if !current_user -%>
+3: <%= render :partial => "welcome_message" %>
+4: <%- else -%>
+5: <% redirect_to show_users_path %>
+6: <%- end -%>
+7: <%= render :partial => 'footer' %>
+
+    app/views/users/index.html.erb:5
+    app/controllers/users_controller.rb:7:in `index'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:43:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `show_user_path' for #<ActionView::Base:0x10311a130>) on line #5 of app/views/users/index.html.erb:
+2: <%- if !current_user -%>
+3: <%= render :partial => "welcome_message" %>
+4: <%- else -%>
+5: <% redirect_to show_user_path %>
+6: <%- end -%>
+7: <%= render :partial => 'footer' %>
+
+    app/views/users/index.html.erb:5
+    app/controllers/users_controller.rb:7:in `index'
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:43:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (3.9ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `show_user_path' for #<ActionView::Base:0x103211408>) on line #5 of app/views/users/index.html.erb:
+2: <%- if !current_user -%>
+3: <%= render :partial => "welcome_message" %>
+4: <%- else -%>
+5: <% redirect_to show_user_path %>
+6: <%- end -%>
+7: <%= render :partial => 'footer' %>
+
+    app/views/users/index.html.erb:5
+    app/controllers/users_controller.rb:7:in `index'
+
+Rendered rescues/_trace (52.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:44:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `redirect_to' for #<ActionView::Base:0x1032d8bc0>) on line #5 of app/views/users/index.html.erb:
+2: <%- if !current_user -%>
+3: <%= render :partial => "welcome_message" %>
+4: <%- else -%>
+5: <% redirect_to current_user %>
+6: <%- end -%>
+7: <%= render :partial => 'footer' %>
+
+    app/views/users/index.html.erb:5
+    app/controllers/users_controller.rb:7:in `index'
+
+Rendered rescues/_trace (163.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:44:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `redirect_to' for #<ActionView::Base:0x10345e3c8>) on line #5 of app/views/users/index.html.erb:
+2: <%- if !current_user -%>
+3: <%= render :partial => "welcome_message" %>
+4: <%- else -%>
+5: <% redirect_to current_user %>
+6: <%- end -%>
+7: <%= render :partial => 'footer' %>
+
+    app/views/users/index.html.erb:5
+    app/controllers/users_controller.rb:7:in `index'
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:45:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (47.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+NameError (undefined local variable or method `show_user_path' for #<UsersController:0x103120f08>):
+  app/controllers/users_controller.rb:6:in `index'
+
+Rendered rescues/_trace (38.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:45:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+NameError (undefined local variable or method `show_user_path' for #<UsersController:0x103321898>):
+  app/controllers/users_controller.rb:6:in `index'
+
+Rendered rescues/_trace (37.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:45:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+NameError (undefined local variable or method `show_user_path' for #<UsersController:0x103168b78>):
+  app/controllers/users_controller.rb:6:in `index'
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:45:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (182.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+NameError (undefined local variable or method `show_users_path' for #<UsersController:0x10333efd8>):
+  app/controllers/users_controller.rb:6:in `index'
+
+Rendered rescues/_trace (39.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:46:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/1
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:46:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (415.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/1
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered rescues/_trace (45.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:46:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.4ms)
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 158ms (View: 153, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:46:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/1
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered rescues/_trace (46.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:47:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered rescues/_trace (131.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:47:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered rescues/_trace (44.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:47:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered rescues/_trace (134.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:47:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/1
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:10:in `index'
+
+Rendered rescues/_trace (45.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:48:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/show
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered rescues/_trace (47.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:48:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/show
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered rescues/_trace (46.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:48:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/show
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered rescues/_trace (46.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:48:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.3ms)
+Completed in 26ms (View: 3, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-02-12 21:48:29) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed in 23ms (DB: 3) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:48:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (11.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.5ms)
+Completed in 32ms (View: 4, DB: 12) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:48:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.3ms)
+Completed in 112ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:48:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.3ms)
+Completed in 23ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:48:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.4ms)
+Completed in 22ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:48:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.4ms)
+Completed in 22ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-12 21:48:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 52ms (View: 35, DB: 2) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-02-12 21:48:49) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"colinyoung", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'colinyoung') LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed in 36ms (DB: 3) | 302 Found [http://localhost/user_sessions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:48:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users?url=google.com
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/users_controller.rb:9:in `index'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:49:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/show
+Completed in 24ms (DB: 2) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:49:34) [GET]
+  Parameters: {"action"=>"show", "id"=>"show", "controller"=>"users"}
+  [4;35;1mUser Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (58.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=show):
+  app/controllers/users_controller.rb:17:in `show'
+
+Rendered rescues/_trace (126.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:49:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/1
+Completed in 25ms (DB: 2) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:49:43) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 33ms (View: 17, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:49:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/1
+Completed in 24ms (DB: 3) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:49:44) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 28ms (View: 12, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:49:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/1
+Completed in 23ms (DB: 3) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:49:45) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 30ms (View: 14, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-02-12 21:49:49) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed in 23ms (DB: 2) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:49:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.3ms)
+Completed in 21ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-12 21:49:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 24ms (View: 6, DB: 2) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-02-12 21:49:54) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"colinyoung", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'colinyoung') LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed in 32ms (DB: 2) | 302 Found [http://localhost/user_sessions]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-12 21:49:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/1
+Completed in 125ms (DB: 3) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:49:54) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 29ms (View: 13, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:50:23) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `name' for #<User:0x1033cba00>) on line #1 of app/views/users/show.html.erb:
+1: <%= current_user.name %>
+
+    app/views/users/show.html.erb:1
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (52.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (111.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (39.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100210052138)
+Migrating to AddNameToUser (20100213035119)
+  [4;36;1mSQL (959.8ms)[0m   [0;1mALTER TABLE `users` ADD `name` varchar(255)[0m
+  [4;35;1mSQL (79.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100213035119')[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (260.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (136.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (66.6ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:51:29) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (10.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 130ms (View: 12, DB: 12) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (306.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:52:02) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 30ms (View: 14, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:52:03) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 27ms (View: 12, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (91.5ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-02-13 03:52:13', `name` = 'Colin Young' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:52:15) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (25.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 51ms (View: 12, DB: 26) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:54:08) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 151ms (View: 93, DB: 33) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddNameToUser (20100213035119)
+  [4;36;1mSQL (281.7ms)[0m   [0;1mALTER TABLE `users` DROP `name`[0m
+  [4;35;1mSQL (36.7ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100213035119'[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (22.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100210052138)
+Migrating to AddNameToUser (20100213035119)
+  [4;36;1mSQL (127.9ms)[0m   [0;1mALTER TABLE `users` ADD `first_name` varchar(255)[0m
+  [4;35;1mSQL (159.1ms)[0m   [0mALTER TABLE `users` ADD `last_name` varchar(255)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100213035119')[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (17.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (20.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-02-13 03:56:06', `last_name` = 'Young', `first_name` = 'Colin' WHERE `id` = 1[0m
+  [4;36;1mSQL (13.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:56:07) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 33ms (View: 17, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-12 21:57:07) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `get' for #<User:0x1033953d8>) on line #5 of app/views/users/show.html.erb:
+2: <h3>Hi, <%= current_user.first_name %>!</h3>
+3: <%- end -%>
+4: 
+5: <%= current_user.get %>
+
+    app/views/users/show.html.erb:5
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (55.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-13 00:29:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (38.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3001/users/1
+Completed in 79ms (DB: 39) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:29:22) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (4.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 37ms (View: 16, DB: 6) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:30:51) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined local variable or method `show_courses_path' for #<ActionView::Base:0x103361768>) on line #1 of app/views/users/show.html.erb:
+1: <% nav link_to "My Courses", show_courses_path %>
+2: 
+3: <%- if current_user.first_name -%>
+4: <h3>Hi, <%= current_user.first_name %>!</h3>
+
+    app/views/users/show.html.erb:1
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (131.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:42:41) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined local variable or method `show_courses_path' for #<ActionView::Base:0x10351adc0>) on line #1 of app/views/users/show.html.erb:
+1: <% nav link_to "My Courses", show_courses_path %>
+2: 
+3: <%- if current_user.first_name -%>
+4: <h3>Hi, <%= current_user.first_name %>!</h3>
+
+    app/views/users/show.html.erb:1
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (52.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:44:40) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined local variable or method `show_courses_path' for #<ActionView::Base:0x1035b1fb8>) on line #1 of app/views/users/show.html.erb:
+1: <% nav link_to "My Courses", show_courses_path %>
+2: 
+3: <%- if current_user.first_name -%>
+4: <h3>Hi, <%= current_user.first_name %>!</h3>
+
+    app/views/users/show.html.erb:1
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (51.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:44:57) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined local variable or method `show_courses_path' for #<ActionView::Base:0x1033a48d8>) on line #1 of app/views/users/show.html.erb:
+1: <% nav link_to "My Courses", show_courses_path %>
+2: 
+3: <%- if current_user.first_name -%>
+4: <h3>Hi, <%= current_user.first_name %>!</h3>
+
+    app/views/users/show.html.erb:1
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (54.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:44:58) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined local variable or method `show_courses_path' for #<ActionView::Base:0x103436a08>) on line #1 of app/views/users/show.html.erb:
+1: <% nav link_to "My Courses", show_courses_path %>
+2: 
+3: <%- if current_user.first_name -%>
+4: <h3>Hi, <%= current_user.first_name %>!</h3>
+
+    app/views/users/show.html.erb:1
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (133.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:44:59) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined local variable or method `show_courses_path' for #<ActionView::Base:0x103679fb8>) on line #1 of app/views/users/show.html.erb:
+1: <% nav link_to "My Courses", show_courses_path %>
+2: 
+3: <%- if current_user.first_name -%>
+4: <h3>Hi, <%= current_user.first_name %>!</h3>
+
+    app/views/users/show.html.erb:1
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (52.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:45:15) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 225ms (View: 209, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-13 00:45:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"courses"}
+Rendering template within layouts/application
+Rendering courses/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 30ms (View: 26, DB: 2) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:46:34) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined method `link_To' for #<ActionView::Base:0x1035088c8>) on line #5 of app/views/users/show.html.erb:
+2:   link_to( "My Courses", courses_path),
+3:   link_to( "My Assignments", assignments_path),  
+4:   link_to( "Edit My Profile", edit_user_path),
+5:   link_To( "Log Out", logout_path)
+6:   ] %>
+7: 
+8: <%- if current_user.first_name -%>
+
+    app/views/users/show.html.erb:5
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (125.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:46:37) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 32ms (View: 17, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 00:47:00) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 33ms (View: 18, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-13 00:47:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"courses"}
+Rendering template within layouts/application
+Rendering courses/index
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 26ms (View: 21, DB: 3) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:02:21) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (2.5ms)
+Completed in 107ms (View: 92, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:06:16) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 32ms (View: 17, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:06:24) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 33ms (View: 17, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:06:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 35ms (View: 16, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:09:23) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 106ms (View: 90, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:09:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 33ms (View: 17, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:09:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 33ms (View: 16, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:10:03) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 32ms (View: 17, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:10:12) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 108ms (View: 92, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:10:23) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 33ms (View: 18, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:10:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (Missing template users/_alerts.erb in view path app/views) on line #13 of app/views/users/show.html.erb:
+10: <%- if current_user.first_name -%>
+11: <h3>Hi, <%= current_user.first_name %>!</h3>
+12: <p>Thanks for logging in.</p>
+13: <%= render :partial => 'alerts' %>
+14: 
+15: <%- end -%>
+16: 
+
+    app/views/users/show.html.erb:13
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (129.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:12:19) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 34ms (View: 18, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-13 01:12:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"courses"}
+Rendering template within layouts/application
+Rendering courses/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 25ms (View: 21, DB: 2) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssignmentsController#index (for 127.0.0.1 at 2010-02-13 01:12:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"assignments"}
+Rendering template within layouts/application
+Rendering assignments/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (6.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 35ms (View: 26, DB: 8) | 200 OK [http://localhost/assignments]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-02-13 01:12:39) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 123ms (View: 108, DB: 3) | 200 OK [http://localhost/users/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:13:41) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (1.0ms)
+Completed in 30ms (View: 15, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:13:42) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (0.7ms)
+Completed in 29ms (View: 14, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:13:48) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `edit_alerts_path' for #<ActionView::Base:0x10320f748>) on line #15 of app/views/users/show.html.erb:
+12: <%- end -%>
+13: <p>Thanks for logging in.</p>
+14: <aside id="alerts">
+15:   <h4>My Alerts (<%= link_to "manage", edit_alerts_path %>)</h4>  
+16: </aside>
+17: 
+18: 
+
+    app/views/users/show.html.erb:15
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (51.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:14:21) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `edit_alerts_path' for #<ActionView::Base:0x1033579c0>) on line #15 of app/views/users/show.html.erb:
+12: <%- end -%>
+13: <p>Thanks for logging in.</p>
+14: <aside id="alerts">
+15:   <h4>My Alerts (<%= link_to "manage", edit_alerts_path %>)</h4>  
+16: </aside>
+17: 
+18: 
+
+    app/views/users/show.html.erb:15
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (55.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:14:37) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_footer (2.8ms)
+Completed in 43ms (View: 27, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:14:56) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_alerts (1.4ms)
+Rendered users/_footer (0.6ms)
+Completed in 42ms (View: 25, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:15:34) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `alerts' for #<User:0x1035399c8>) on line #3 of app/views/users/_alerts.html.erb:
+1: <aside id="alerts">
+2:   <h4>My Alerts (<%= link_to "manage", edit_alert_path %>)</h4>  
+3:   <% if !current_user.alerts %>
+4:     Manage
+5:   <%- else -%>
+6:     You have no alerts.
+
+    app/views/users/_alerts.html.erb:3
+    app/views/users/show.html.erb:16
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (141.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:16:51) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `hasAlerts?' for #<User:0x1035da4e0>) on line #3 of app/views/users/_alerts.html.erb:
+1: <aside id="alerts">
+2:   <h4>My Alerts (<%= link_to "manage", edit_alert_path %>)</h4>  
+3:   <% if !current_user.hasAlerts? %>
+4:   
+5:   <%- else -%>
+6:     You have no alerts.
+
+    app/views/users/_alerts.html.erb:3
+    app/views/users/show.html.erb:16
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (63.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:19:00) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `hasAlerts?' for #<User:0x1036f8ca0>) on line #3 of app/views/users/_alerts.html.erb:
+1: <aside id="alerts">
+2:   <h4>My Alerts (<%= link_to "manage", edit_alert_path %>)</h4>  
+3:   <% if !current_user.hasAlerts? %>
+4:   
+5:   <%- else -%>
+6:     You have no alerts.
+
+    app/views/users/_alerts.html.erb:3
+    app/views/users/show.html.erb:16
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (66.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:19:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `hasAlerts?' for #<User:0x103210a08>) on line #3 of app/views/users/_alerts.html.erb:
+1: <aside id="alerts">
+2:   <h4>My Alerts (<%= link_to "manage", edit_alert_path %>)</h4>  
+3:   <% if !current_user.hasAlerts? %>
+4:   
+5:   <%- else -%>
+6:     You have no alerts.
+
+    app/views/users/_alerts.html.erb:3
+    app/views/users/show.html.erb:16
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (61.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:19:15) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `hasAlerts?' for #<User:0x103316218>) on line #3 of app/views/users/_alerts.html.erb:
+1: <aside id="alerts">
+2:   <h4>My Alerts (<%= link_to "manage", edit_alert_path %>)</h4>  
+3:   <% if !current_user.hasAlerts? %>
+4:   
+5:   <%- else -%>
+6:     You have no alerts.
+
+    app/views/users/_alerts.html.erb:3
+    app/views/users/show.html.erb:16
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (143.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:19:25) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `hasAlerts?' for #<User:0x1034433e8>) on line #3 of app/views/users/_alerts.html.erb:
+1: <aside id="alerts">
+2:   <h4>My Alerts (<%= link_to "manage", edit_alert_path %>)</h4>  
+3:   <% if !current_user.hasAlerts? %>
+4:   
+5:   <%- else -%>
+6:     You have no alerts.
+
+    app/views/users/_alerts.html.erb:3
+    app/views/users/show.html.erb:16
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (143.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:19:41) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `hasAlerts?' for #<User:0x1035c9d20>) on line #3 of app/views/users/_alerts.html.erb:
+1: <aside id="alerts">
+2:   <h4>My Alerts (<%= link_to "manage", edit_alert_path %>)</h4>  
+3:   <% if !current_user.hasAlerts? %>
+4:   
+5:   <%- else -%>
+6:     You have no alerts.
+
+    app/views/users/_alerts.html.erb:3
+    app/views/users/show.html.erb:16
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (59.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:19:42) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `hasAlerts?' for #<User:0x1036d26b8>) on line #3 of app/views/users/_alerts.html.erb:
+1: <aside id="alerts">
+2:   <h4>My Alerts (<%= link_to "manage", edit_alert_path %>)</h4>  
+3:   <% if !current_user.hasAlerts? %>
+4:   
+5:   <%- else -%>
+6:     You have no alerts.
+
+    app/views/users/_alerts.html.erb:3
+    app/views/users/show.html.erb:16
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (61.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:20:22) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (18.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #3 of app/views/users/_alerts.html.erb:
+1: <aside id="alerts">
+2:   <h4>My Alerts (<%= link_to "manage", edit_alert_path %>)</h4>  
+3:   <% if !hasAlerts?(current_user) %>
+4:   
+5:   <%- else -%>
+6:     You have no alerts.
+
+    app/views/users/_alerts.html.erb:3:in `hasAlerts?'
+    app/views/users/_alerts.html.erb:3
+    app/views/users/show.html.erb:16
+    app/controllers/users_controller.rb:19:in `show'
+
+Rendered rescues/_trace (61.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 01:20:28) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_alerts (1.5ms)
+Rendered users/_footer (3.2ms)
+Completed in 42ms (View: 27, DB: 2) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-13 11:53:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (350.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (66.5ms)
+Rendered users/_footer (437.5ms)
+Completed in 1228ms (View: 649, DB: 351) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-13 11:53:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (208.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (1.1ms)
+Rendered users/_footer (0.4ms)
+Completed in 571ms (View: 238, DB: 209) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-13 11:53:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (9.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.3ms)
+Completed in 31ms (View: 3, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-13 11:54:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (7.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.4ms)
+Completed in 28ms (View: 3, DB: 8) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-13 11:54:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (28.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.4ms)
+Completed in 74ms (View: 29, DB: 28) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-13 11:54:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (1.1ms)
+Rendered users/_footer (92.2ms)
+Completed in 138ms (View: 117, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-13 11:54:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (13.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_welcome_message (0.1ms)
+Rendered users/_footer (0.4ms)
+Completed in 33ms (View: 3, DB: 15) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-02-13 11:54:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (21.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 164ms (View: 126, DB: 22) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-02-13 11:54:50) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"colinyoung", "password"=>"[FILTERED]"}, "action"=>"create", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (23.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(`users`.username) = 'colinyoung') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 271ms (DB: 24) | 302 Found [http://localhost/user_sessions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-13 11:54:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/users/1
+Completed in 51ms (DB: 3) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 11:54:51) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_alerts (19.6ms)
+Rendered users/_footer (0.6ms)
+Completed in 74ms (View: 56, DB: 3) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-02-13 11:56:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (12.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/users/1
+Completed in 38ms (DB: 13) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 11:56:34) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (54.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_alerts (0.5ms)
+Rendered users/_footer (0.6ms)
+Completed in 83ms (View: 14, DB: 55) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-02-13 18:12:12) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (81.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Rendered users/_alerts (1.9ms)
+Rendered users/_footer (11.3ms)
+Completed in 373ms (View: 261, DB: 83) | 200 OK [http://localhost/users/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-13 18:12:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"courses"}
+Rendering template within layouts/application
+Rendering courses/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 48ms (View: 44, DB: 2) | 200 OK [http://localhost/courses]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssignmentsController#index (for 127.0.0.1 at 2010-02-13 18:12:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"assignments"}
+Rendering template within layouts/application
+Rendering assignments/index
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 33ms (View: 29, DB: 2) | 200 OK [http://localhost/assignments]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CoursesController#index (for 127.0.0.1 at 2010-02-13 18:12:22) [GET]
+  Parameters: {"action"=>"index", "controller"=>"courses"}
+Rendering template within layouts/application
+Rendering courses/index
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Completed in 28ms (View: 24, DB: 2) | 200 OK [http://localhost/courses]

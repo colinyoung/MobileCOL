@@ -1,0 +1,8 @@
+<aside id="alerts">
+  <h4>My Alerts (<%= link_to "manage", edit_alert_path %>)</h4>  
+  <% if !hasAlerts? %>
+  
+  <%- else -%>
+    You have no alerts.
+  <%- end -%>
+</aside>

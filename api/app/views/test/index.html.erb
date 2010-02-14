@@ -1,0 +1,24 @@
+<div class="w33">
+<form name="first" method="get" action="/courses">
+  <p><label for="formaction">Script Action (API Endpoint):</label><br />
+  <input type="text" name="formaction" id="formaction" value="/courses" />
+  </p>
+  
+  <p><label for="api_key">API Key:</label> (<a href="/signup">Get one here</a>)<br />
+  <input type="text" name="api_key" id="api_key" value="" />
+  </p>
+  
+  <p><label for="student_id">Student ID (if required for transaction):</label><br />
+  <input type="text" name="student_id" id="student_id" value="" />
+  </p>
+              
+  <p><label for="submit">Submit</label><br />
+  <input type="submit" name="submit" id="submit" value="Get XML" />
+  </p>      
+</form>
+</div><!-- w33 -->
+<div class="w66">
+  <textarea id="response" name="response" disabled="disabled">
+  </textarea><br />
+  <button id="clipboard" onclick="copy_to_clipboard('response')">Copy to Clipboard</button> | <button id="response_clear">Clear</button>
+</div>

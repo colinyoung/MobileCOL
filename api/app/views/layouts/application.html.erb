@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :all %>
+    <title><%- if !@content_for_title -%><%- @content_for_title = PRODUCT_NAME %><%- else -%><%= yield :title %><%- end -%></title>
+  </head>
+  <body>
+  <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %> 
+  <%= render :partial => "shared/sessions" %>
+  <h1><%= yield :title %></h1>
+  <%= yield %>
+  </body>
+</html>
