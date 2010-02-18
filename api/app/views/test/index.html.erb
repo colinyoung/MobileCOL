@@ -4,13 +4,23 @@
   <input type="text" name="formaction" id="formaction" value="/courses" />
   </p>
   
-  <p><label for="api_key">API Key:</label> (<a href="/signup">Get one here</a>)<br />
+  <p><label for="api_key">API Key:</label>
+  <% if !current_api_user %>
+   (<a href="/signup">Get one here</a>)<br />
   <input type="text" name="api_key" id="api_key" value="" />
+  <% else %>
+  <input type="hidden" name="api_key" id="api_key" value="<%= current_api_user.api_key %>" />
+  <%= current_api_user.api_key[0..5] %>... (etc)
+  <% end %>
   </p>
   
-  <p><label for="student_id">Student ID (if required for transaction):</label><br />
-  <input type="text" name="student_id" id="student_id" value="" />
+  <p><label for="student_id">Student ID:</label><br />
+  <input type="text" name="student[col_username]" id="student_id" value="" />
   </p>
+  
+  <p><label for="student_password">Student Password (if required for transaction):</label><br />
+  <input type="text" name="student[col_password]" id="student_password" value="" />
+  </p>  
               
   <p><label for="submit">Submit</label><br />
   <input type="submit" name="submit" id="submit" value="Get XML" />

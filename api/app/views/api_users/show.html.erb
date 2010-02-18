@@ -1,2 +1,16 @@
-<h1>ApiUser#show</h1>
-<p>Find me in app/views/api_user/show.html.erb</p>
+<% title "Hello, #{@api_user.first_name}!"%>
+<h3>Your Information (<%= link_to "edit", edit_api_user_path(:current) %>)</h3>
+<p><strong>Name</strong><br />
+  <%= @api_user.first_name + " " + @api_user.last_name %>
+</p>
+
+<p><strong>Email Address</strong><br />
+  <%= @api_user.email %>
+</p>
+
+<p><strong>API Key</strong><br />
+  <%= @api_user.api_key %> (<%= link_to "regenerate", {:id => "current", :action => "regenerate_key"}, {:confirm => "Are you sure you want to regenerate your key?  This will cause your existing applications to break."} %>)
+</p>
+<hr />
+<p><strong>Test</strong><br />
+<%= link_to "JavaScript API Tester", :controller => "test" %>

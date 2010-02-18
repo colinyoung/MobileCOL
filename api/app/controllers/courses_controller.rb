@@ -1,18 +1,18 @@
 class CoursesController < ApplicationController
   def index
-    @courses = Course.all
+    @courses = Student.find_by_col_username(params[:student][:col_username]).courses
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @courses }
     end
+    #redirect_to "/courses/" + params[:student_id]
   end
 
   # GET /courses/1
   # GET /courses/1.xml
   def show
-    @course = Course.find(params[:id])
-
+    @course = Student.find(params[:student][:col_username]).courses.find(params[:id])
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @course }

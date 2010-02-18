@@ -2,7 +2,7 @@
 # Likewise, all the methods added will be available for all controllers.
 
 class ApplicationController < ActionController::Base
-  filter_parameter_logging :password
+  filter_parameter_logging :password, :encrypted_col_password
 
   before_filter :set_default_response_format, :key_check
   
@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
 
   private
     def unlocked_controllers
-      ["error", "api_users", "test"]
+      ["error", "api_users", "test", "api_user_sessions"]
     end
 
     def key_check
@@ -26,14 +26,14 @@ class ApplicationController < ActionController::Base
         redirect_to :controller => "error", :name => "invalid_key"
       end
     end
-
+    
     def api_key_is_valid(key)
       @api_user = ApiUser.find_by_api_key(key)
     end
     
     def current_api_user_session
-      return @current_user_session if defined?(@current_api_user_session)
-      @current_api_user_session = UserSession.find
+      return @current_api_user_session if defined?(@current_api_user_session)
+      @current_api_user_session = ApiUserSession.find
     end
 
     def current_api_user

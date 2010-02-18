@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100213215417) do
+ActiveRecord::Schema.define(:version => 20100218044023) do
 
   create_table "api_users", :force => true do |t|
     t.string   "first_name"
@@ -56,11 +56,12 @@ ActiveRecord::Schema.define(:version => 20100213215417) do
   end
 
   create_table "students", :force => true do |t|
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "encrypted_col_password"
     t.string   "col_username"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
 end

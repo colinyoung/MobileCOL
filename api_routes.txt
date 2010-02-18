@@ -1,0 +1,27 @@
+/student
+/student/add
+
+/courses
+
+/course/:term
+/course/:term/:number
+  => id is of format "WQ2009:IT-223-801"
+  
+/assignments
+/assignments/completed
+/assignments/upcoming
+
+/assignments/:month
+/assignments/:month-:day
+
+/assignment/:id
+  => id comes from COL
+  
+/documents/:course_id
+
+/document/:id
+  => id comes from COL
+
+/roster/:course_id
+  
+/links/:course_id

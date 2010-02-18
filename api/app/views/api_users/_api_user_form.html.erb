@@ -1,7 +1,6 @@
 <% form_for(@api_user) do |f| %>
   
   <%= f.error_messages %>
-
   <p>
   <%= f.label :email %><br />
   <%= f.text_field :email %>
@@ -14,6 +13,19 @@
   <%= f.label :last_name %><br />
   <%= f.text_field :last_name %>
   </p>
+  <% begin %>
+    <%= insert %>
+  <% rescue %>
+    
+  <% end %>
+  <p>
+  <%= f.label :password %><br />
+  <%= f.password_field :password %>
+  </p>  
+  <p>
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %>
+  </p>  
   
   <p>
     <%= f.submit %>

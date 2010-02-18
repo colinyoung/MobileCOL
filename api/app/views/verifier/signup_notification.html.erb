@@ -1,0 +1,8 @@
+<h2>
+  Hello there, <%= @account.first_name %>!
+</h2>
+<p>Thanks for registering for an API Key for <%= PRODUCT_NAME %>.</p>
+<p>Cut and paste your key from the box below:</p>
+<code><pre><%= @account.api_key %></pre></code>
+<p>You can login with this code at <a href="http://api.mobilecol.info/login">api.mobilecol.info/login</a> or just start hitting the API with requests.  For more info on getting your usage set up, check out the test function at <a href="http://api.mobilecol.info/test">api.mobilecol.info/test</a>.
+<%= render :partial => "signature" %>

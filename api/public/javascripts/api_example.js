@@ -17,8 +17,8 @@ $(document).ready(function(){
     document.first.action = this.value;
   });
   $("#submit").click(function() {
-    $("#response").text("loading");        
-    $.get(document.first.action, $(theForm).serialize(), function(data) {
+    $("#response").text("loading");
+    $.get(document.first.action, $(document.first).serialize(), function(data) {
       $("#response").text(data);
     }, "text");
     return false;

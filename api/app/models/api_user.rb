@@ -17,4 +17,12 @@ class ApiUser < ActiveRecord::Base
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, :on => :update
   
   validates_uniqueness_of :email, :message => "has already been taken."
+  
+  validates_presence_of :first_name, :last_name, :email
+  
+  attr_accessible :email, :password, :password_confirmation, :first_name, :last_name
+  
+  def active?
+    true # we don't do any verification codes.
+  end  
 end

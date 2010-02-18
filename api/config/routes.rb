@@ -3,7 +3,11 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :api_users
   
+  map.resources :api_user_sessions
+  
   map.connect 'signup', :controller => "api_users"
+  
+  map.connect 'create', :controller => "students", :action => "create"
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -12,8 +16,8 @@ ActionController::Routing::Routes.draw do |map|
   # Keep in mind you can assign values other than :controller and :action
   map.connect 'error/:name', :controller => 'error', :action => 'index'
   
-  map.login "login", :controller => "user_sessions", :action => "new"
-  map.logout "logout", :controller => "user_sessions", :action => "destroy"  
+  map.login "login", :controller => "api_user_sessions", :action => "new"
+  map.logout "logout", :controller => "api_user_sessions", :action => "destroy"  
   
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   map.resources :products

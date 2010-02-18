@@ -1,2 +1,4 @@
-<h1>ApiUser#edit</h1>
-<p>Find me in app/views/api_user/edit.html.erb</p>
+<% title "Edit Your Profile" %>
+<h3>Your Information</h3>
+
+<%= render :partial => "api_user_form", :locals => {:insert => "<p class='quiet'>Leave blank to keep your existing password.</p>"} %>
