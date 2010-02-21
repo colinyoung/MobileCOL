@@ -2,3 +2,4 @@
 log/*
 script/*
 tmp/**/*
+config/database.yml
