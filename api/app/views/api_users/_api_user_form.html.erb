@@ -5,6 +5,11 @@
   <%= f.label :email %><br />
   <%= f.text_field :email %>
   </p>
+  <% begin %>
+    <%= inserts[0] %>
+  <% rescue %>
+    
+  <% end %>  
   <p>
   <%= f.label :first_name %><br />
   <%= f.text_field :first_name %>
@@ -14,7 +19,7 @@
   <%= f.text_field :last_name %>
   </p>
   <% begin %>
-    <%= insert %>
+    <%= inserts[1] %>
   <% rescue %>
     
   <% end %>

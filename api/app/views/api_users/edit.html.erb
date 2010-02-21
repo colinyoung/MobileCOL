@@ -1,4 +1,11 @@
 <% title "Edit Your Profile" %>
 <h3>Your Information</h3>
 
-<%= render :partial => "api_user_form", :locals => {:insert => "<p class='quiet'>Leave blank to keep your existing password.</p>"} %>
+<%= render :partial => "api_user_form", :locals => {
+  :inserts => [
+    "<p class='quiet'>Since your account is verified, you can now change this to a non-DePaul account.</p>",
+    "<p class='quiet'>Leave blank to keep your existing password.</p>"
+    
+    ]
+} %>
+<%= link_to "Cancel", :controller => "api_users", :action => "current" %>
