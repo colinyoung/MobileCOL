@@ -1,5 +1,9 @@
 class CoursesController < ApplicationController
   def index
+    if !Student.exists?(:col_username => params[:col_username])
+      render :text => "user not found"
+      return false
+    end
     @courses = Student.find_by_col_username(params[:student][:col_username]).courses
 
     respond_to do |format|

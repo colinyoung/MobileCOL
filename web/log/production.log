@@ -1,0 +1,35 @@
+
+
+Processing UsersController#index (for 216.80.12.236 at 2010-02-21 13:28:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/index
+Completed in 15ms (View: 12, DB: 1) | 200 OK [http://www.mobilecol.info/]
+
+
+Processing UserSessionsController#new (for 216.80.12.236 at 2010-02-21 13:28:44) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.mobilecol.info/login]
+
+
+Processing UsersController#index (for 216.80.12.236 at 2010-02-21 13:28:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.mobilecol.info/]
+
+
+Processing UsersController#new (for 216.80.12.236 at 2010-02-21 13:28:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.mobilecol.info/users/new]
+
+
+Processing UsersController#index (for 216.80.12.236 at 2010-02-21 13:28:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.mobilecol.info/users]

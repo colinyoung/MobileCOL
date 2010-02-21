@@ -20,7 +20,12 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql
+  encoding: utf8
+  database: givabit_mobilecol
   pool: 5
-  timeout: 5000
+  username: givabit_mobilec
+  password: Xr;l=B8KJ1gX
+  socket: /tmp/mysql.sock
+  host: localhost
+

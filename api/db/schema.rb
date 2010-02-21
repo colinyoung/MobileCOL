@@ -51,6 +51,14 @@ ActiveRecord::Schema.define(:version => 20100221204251) do
     t.integer "student_id"
   end
 
+  create_table "credentials", :force => true do |t|
+    t.integer  "student_id"
+    t.string   "col_username"
+    t.string   "col_password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "instructors", :force => true do |t|
     t.string   "name"
     t.string   "office"

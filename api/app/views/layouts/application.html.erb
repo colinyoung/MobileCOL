@@ -2,7 +2,7 @@
 <html>
   <head>
     <%= stylesheet_link_tag :all %>
-    <%= javascript_include_tag :all, :cache => :true %>
+    <%= javascript_include_tag :all, :cache => true %>
     <title><%- if !@content_for_title -%><%- @content_for_title = PRODUCT_NAME %><%- else -%><%= yield :title %><%- end -%></title>
   </head>
   <body>
