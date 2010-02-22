@@ -1,5 +1,5 @@
 class ApiUserSession < Authlogic::Session::Base
-  validate :check_if_verified
+  validate :check_if_perishable_token_exists
   
   private
   
