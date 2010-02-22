@@ -60,7 +60,7 @@ class ApiUsersController < ApplicationController
     
     @api_user = ApiUser.find_using_perishable_token!(params[:id])
     
-    @api_user.perishable_token = "" # clear perishable_token
+    @api_user.active = true # make the user active!
     if @api_user.save
       flash[:notice] = "Your account has been verified! Please log in below."
     else
