@@ -59,7 +59,7 @@ class ApiUsersController < ApplicationController
     end
     
     @api_user = ApiUser.find_using_perishable_token!(params[:id])
-    
+      Verifier.deliver_verified_notification(@api_user)
     @api_user.active = true # make the user active!
     if @api_user.save
       flash[:notice] = "Your account has been verified! Please log in below."
