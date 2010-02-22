@@ -33,3 +33,10 @@ Processing UsersController#index (for 216.80.12.236 at 2010-02-21 13:28:48) [GET
 Rendering template within layouts/application
 Rendering users/index
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.mobilecol.info/users]
+
+
+Processing UsersController#index (for 216.80.12.236 at 2010-02-21 15:33:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/index
+Completed in 15ms (View: 12, DB: 15) | 200 OK [http://mobilecol.info/]

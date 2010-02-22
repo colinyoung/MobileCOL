@@ -34,7 +34,8 @@ Rails::Initializer.run do |config|
   # Activate observers that should always be running
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 
-  config.time_zone = 'Central Time (US & Canada)' # CDM is in Central Time Zone
+ # config.time_zone = 'Central Time (US & Canada)' # CDM is in Central 
+#Time Zone
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
