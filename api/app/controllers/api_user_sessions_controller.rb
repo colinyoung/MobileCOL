@@ -10,6 +10,9 @@ class ApiUserSessionsController < ApplicationController
   end
   
   def new
+    if current_api_user
+      redirect_to current_api_user
+    end
     @api_user_session = ApiUserSession.new
   end
 

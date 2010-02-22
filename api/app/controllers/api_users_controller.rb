@@ -8,7 +8,7 @@ class ApiUsersController < ApplicationController
 
   def create
   @api_user = ApiUser.new(params[:api_user])
-  @api_user.api_key = Digest::SHA1.hexdigest(@api_user.email)  
+  @api_user.api_key = Digest::SHA1.hexdigest(@api_user.email)
     if @api_user.save
       flash[:notice] = "Successfully created account! Please check your email for a verification link."
       Verifier.deliver_signup_notification(@api_user)
