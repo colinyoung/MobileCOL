@@ -66,4 +66,5 @@ class ApiUsersController < ApplicationController
       flash[:error] = "There was an error verifying your account."
     end
     redirect_to :login
+  end
 end
