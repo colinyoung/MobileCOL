@@ -53,7 +53,7 @@ class ApiUsersController < ApplicationController
   
   def validate_new_user
     begin
-    @api_user = ApiUser.find_by_perishable_token!(params[:id])
+    @api_user = ApiUser.find_using_perishable_token!(params[:id])
     rescue
         flash[:error] = "Error verifying account: No user found with that verification code."
         redirect_to :login
