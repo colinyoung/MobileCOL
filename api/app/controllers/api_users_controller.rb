@@ -10,7 +10,7 @@ class ApiUsersController < ApplicationController
   @api_user = ApiUser.new(params[:api_user])
   @api_user.api_key = Digest::SHA1.hexdigest(@api_user.email)  
     if @api_user.save
-      flash[:notice] = "Successfully created account! You can log in below."
+      flash[:notice] = "Successfully created account! Please check your email for a verification link."
       Verifier.deliver_signup_notification(@api_user)
       redirect_to :login
     else
@@ -50,4 +50,20 @@ class ApiUsersController < ApplicationController
     @api_user.save
     redirect_to :action => "show"
   end
+  
+  def validate_new_user
+    begin
+    @api_user = ApiUser.find_by_perishable_token!(params[:id])
+      catch
+        flash[:error] = "Error verifying account: No user found with that verification code."
+        redirect_to :login
+    end
+    
+    @api_user.perishable_token = "" # clear perishable_token
+    if @api_user.save
+      flash[:notice] = "Your account has been verified! Please log in below."
+    else
+      flash[:error] = "There was an error verifying your account."
+    end
+    redirect_to :login
 end

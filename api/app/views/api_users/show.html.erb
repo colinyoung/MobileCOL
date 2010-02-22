@@ -1,4 +1,4 @@
-<% title "Hello, #{@api_user.first_name}!"%>
+<% title "Hello, #{@api_user.first_name}! | #{PRODUCT_NAME}"%>
 <h3>Your Information (<%= link_to "edit", edit_api_user_path(:current) %>)</h3>
 <p><strong>Name</strong><br />
   <%= @api_user.first_name + " " + @api_user.last_name %>
