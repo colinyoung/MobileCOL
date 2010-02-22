@@ -55,6 +55,7 @@ class ApiUsersController < ApplicationController
     if !ApiUser.exists?(:perishable_token => params[:id])
       flash[:error] = "Error verifying account: No user found with that verification code."
       redirect_to :login
+      return false
     end
     
     @api_user = ApiUser.find_using_perishable_token!(params[:id])
