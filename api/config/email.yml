@@ -1,0 +1,12 @@
+development:
+  :address: mail.mobilecol.info
+  :port: 25
+  :authentication: login
+  :user_name: accounts@api.mobilecol.info
+  :password: Wp2ZVk#=CqWa
+production:
+  :address: mail.mobilecol.info
+  :port: 25
+  :authentication: login
+  :user_name: accounts@api.mobilecol.info
+  :password: Wp2ZVk#=CqWa
