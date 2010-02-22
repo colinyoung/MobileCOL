@@ -26,11 +26,10 @@ class ApiUser < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :first_name, :last_name
   
   def active?
-    if self.perishable_token.length > 0
-      return false
-    else
+    if self.active == true
       return true
     end
+    false
   end  
   
 end
