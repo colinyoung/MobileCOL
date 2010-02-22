@@ -3,5 +3,5 @@
 </h3>
 <p><b>This is an email from <%= PRODUCT_NAME %> regarding the account you've just signed up for.</b></p>
 <p>Please click the link below to verify your account:</p>
-<p><% url_for :host => PRODUCT_DOMAIN, :controller => "api_users", :action => "validate_new_user", :id => @account.perishable_token %></p>
+<p><%= url_for :host => PRODUCT_DOMAIN, :controller => "api_users", :action => "validate_new_user", :id => @account.perishable_token %></p>
 <%= render :partial => "signature" %>
