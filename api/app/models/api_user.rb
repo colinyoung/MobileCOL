@@ -1,11 +1,14 @@
 class ApiUser < ActiveRecord::Base
-  acts_as_authentic # => authlogic functions
-  
   # TODO
   #  - config option to allow any email on create  
   #
   #  - race conditions with validates_uniqueness_of
-  
+    
+  acts_as_authentic do |config| # => authlogic functions
+    
+    config.maintain_sessions = false # disables auto-login after registration
+    
+  end  
   # validate depaul-only email on create
   validates_format_of :email, :with => /\A([^@\s]+)@((?:students\.|mail\.|)+(?:depaul+\.)+edu)\Z/i, 
     :on => :create, 
@@ -23,6 +26,11 @@ class ApiUser < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :first_name, :last_name
   
   def active?
-    true # we don't do any verification codes.
+    if self.perishable_token.length > 0
+      return false
+    else
+      return true
+    end
   end  
+  
 end
